@@ -4,6 +4,7 @@ For external hardware connected to the server:
 1. Identify the hard drive: Use `lsblk` or `fdisk -l` command to list all block devices, your newly attached drive should appear here.
 
 ![image](https://github.com/AdityaKoranga/media-linux/assets/95766110/aa243267-4516-4683-b18c-d021b9f1346c)
+
 In my case it is sdc1
 
 

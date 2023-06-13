@@ -2,11 +2,12 @@
 For external hardware connected to the server:
 
 1. Identify the hard drive: Use `lsblk` or `fdisk -l` command to list all block devices, your newly attached drive should appear here.
+
 ![image](https://github.com/AdityaKoranga/media-linux/assets/95766110/aa243267-4516-4683-b18c-d021b9f1346c)
 In my case it is sdc1
 
 
-2.  Create a mount point:
+3.  Create a mount point:
 sudo mkdir /media/new_drive
 ```bash
 sudo mkdir /media/oran
@@ -15,6 +16,11 @@ sudo mkdir /media/oran
 ```bash
 sudo mount /dev/sdc1 /media/oran
 ```
+> After completing all the things unmount the drive before removing it:
+```bash
+sudo umount /media/oran
+```
+
 Now you can see all the files of hard-drive
 4. Automatic Mounting for next time:
 
